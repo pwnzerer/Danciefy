@@ -5,6 +5,8 @@ import uvicorn
 from fastapi.responses import HTMLResponse
 import requests
 
+my_token =
+
 def scoregenerator(songname):
     
     
@@ -12,7 +14,7 @@ def scoregenerator(songname):
     headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer BQB4_8Py6bNEd_D42Z0q-Eqdwmk3qyKav9XkDUxxoEKZKHSd4fn6xNmEC2WnMsC0tCYihY1L7APgDd9Gvht9MB57gyj4rpjlLwDGZGNBpRJ1pTsukyJ3qvZVHCKfzMaNOF9WGMO-e23LhkomI9W7Hm-5PA7xHxkIAXs',
+        'Authorization': 'Bearer BQCkQpxbj0eU23E2IrvvAg8VM6CCj7p-fkYecJ7-yN8PBoqER4o4AyuEDLr5qk6zUMzYUKfuA0Z-VGpzw7WUyxWWpkLWrmpvZU97snQGYuUwkmQTeXK-CAikQUaDRL5b6PUuyzlzrARnUHdiNv47cNlceYGEOr-s6N8',
     }
 
 
@@ -38,7 +40,7 @@ def scoregenerator(songname):
     headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer BQB4_8Py6bNEd_D42Z0q-Eqdwmk3qyKav9XkDUxxoEKZKHSd4fn6xNmEC2WnMsC0tCYihY1L7APgDd9Gvht9MB57gyj4rpjlLwDGZGNBpRJ1pTsukyJ3qvZVHCKfzMaNOF9WGMO-e23LhkomI9W7Hm-5PA7xHxkIAXs',
+        'Authorization': 'Bearer BQCkQpxbj0eU23E2IrvvAg8VM6CCj7p-fkYecJ7-yN8PBoqER4o4AyuEDLr5qk6zUMzYUKfuA0Z-VGpzw7WUyxWWpkLWrmpvZU97snQGYuUwkmQTeXK-CAikQUaDRL5b6PUuyzlzrARnUHdiNv47cNlceYGEOr-s6N8',
     }
 
     params = (

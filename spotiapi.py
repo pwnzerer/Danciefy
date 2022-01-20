@@ -12,7 +12,7 @@ def scoregenerator(songname):
     headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer BQBHW6fctS1Z7lI8cngg8MrsydP2zay2DQy4vXBpXLOM1Mqw_Etx-1Ga9LYEucL8Ze1MRlyTbXJ949U9VkP84_5kKuCOYleXceCu49N2FO33cKwI_s7dVfP3Ef-zKqKBthuR9K9uHCiuu1nYNbCxGDnNItZP7cLXeVc',
+        'Authorization': 'Bearer BQB4_8Py6bNEd_D42Z0q-Eqdwmk3qyKav9XkDUxxoEKZKHSd4fn6xNmEC2WnMsC0tCYihY1L7APgDd9Gvht9MB57gyj4rpjlLwDGZGNBpRJ1pTsukyJ3qvZVHCKfzMaNOF9WGMO-e23LhkomI9W7Hm-5PA7xHxkIAXs',
     }
 
 
@@ -38,7 +38,7 @@ def scoregenerator(songname):
     headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer BQBHW6fctS1Z7lI8cngg8MrsydP2zay2DQy4vXBpXLOM1Mqw_Etx-1Ga9LYEucL8Ze1MRlyTbXJ949U9VkP84_5kKuCOYleXceCu49N2FO33cKwI_s7dVfP3Ef-zKqKBthuR9K9uHCiuu1nYNbCxGDnNItZP7cLXeVc',
+        'Authorization': 'Bearer BQB4_8Py6bNEd_D42Z0q-Eqdwmk3qyKav9XkDUxxoEKZKHSd4fn6xNmEC2WnMsC0tCYihY1L7APgDd9Gvht9MB57gyj4rpjlLwDGZGNBpRJ1pTsukyJ3qvZVHCKfzMaNOF9WGMO-e23LhkomI9W7Hm-5PA7xHxkIAXs',
     }
 
     params = (

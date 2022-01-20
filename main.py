@@ -5,7 +5,7 @@ import uvicorn
 from fastapi.responses import HTMLResponse
 import requests
 
-my_token =
+
 
 def scoregenerator(songname):
     

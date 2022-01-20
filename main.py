@@ -70,19 +70,9 @@ async def get_form_data(request : Request,inputsongname: str = Form(...)):
     songscore = scoregenerator(inputsongname)
     return templates.TemplateResponse('index.html',{"request": request,"songscore1": songscore})
 
-if __name__ == '__main__':
-    uvicorn.run(app)
+# if __name__ == '__main__':
+#     uvicorn.run(app)
     
     
     
     
-# @app.get("/form")
-# def form_post(request: Request):
-#     result = "Type a number"
-#     return templates.TemplateResponse('form.html', context={'request': request, 'result': result})
-
-
-# @app.post("/form")
-# def form_post(request: Request, num: int = Form(...)):
-#     result = spell_number(num)
-#     return templates.TemplateResponse('form.html', context={'request': request, 'result': result})

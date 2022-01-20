@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Danciefy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static\assets\vendor\bootstrap\css\bootstrap.min.css" rel="stylesheet">
+  <link href="static\assets\vendor\bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static\assets\vendor\boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static\assets\vendor\glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static\assets\vendor\remixicon/remixicon.css" rel="stylesheet">
+  <link href="static\assets\vendor\swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static\assets\css\style.css" rel="stylesheet">
+
+
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container-fluid"> 
+
+      <div class="row justify-content-center"> </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h1>Danciefy</h1>
+          <h2>Find the Danceability Score of any Song </h2>
+          <form method="POST">
+			<label for="inputPassword5" class="form-label" style="color : white">Search for Song</label>
+<input type="text" name="inputsongname" class="form-control" aria-describedby="passwordHelpBlock">
+<br>
+<button type="Submit" class="btn btn-success">Search</button>
+          </form>
+<div id="passwordHelpBlock" class="form-text">
+  Make sure the song you enter is available on spotify since this web app uses the spotify API.
+</div>
+
+
+          
+        </div>
+        <br>
+        <br>
+        <div>
+          <br>
+          <br>
+          <h1 style="color:white">THE  SCORE FOR THIS SONG IS : {{ songscore1 }}</h1></div>
+      </div>
+    </div>
+  </section><!-- End Hero -->  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+<p>Made by Pwnzerer</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+</div>
+  </footer><!-- End Footer -->  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static\assets\vendor/purecounter/purecounter.js"></script>
+  <script src="static\assets\vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static\assets\vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static\assets\vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static\assets\vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="static\assets\js\main.js"></script>
+
+</body>
+
+</html>

@@ -4,17 +4,17 @@ from fastapi.staticfiles import StaticFiles
 import uvicorn
 from fastapi.responses import HTMLResponse
 import requests
+from credgen import *
 
 
-
-def scoregenerator(songname):
+def scoregenerator(songname,token):
     
     
     
     headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer BQCkQpxbj0eU23E2IrvvAg8VM6CCj7p-fkYecJ7-yN8PBoqER4o4AyuEDLr5qk6zUMzYUKfuA0Z-VGpzw7WUyxWWpkLWrmpvZU97snQGYuUwkmQTeXK-CAikQUaDRL5b6PUuyzlzrARnUHdiNv47cNlceYGEOr-s6N8',
+        'Authorization': f'Bearer {token}',
     }
 
 
@@ -40,7 +40,7 @@ def scoregenerator(songname):
     headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer BQCkQpxbj0eU23E2IrvvAg8VM6CCj7p-fkYecJ7-yN8PBoqER4o4AyuEDLr5qk6zUMzYUKfuA0Z-VGpzw7WUyxWWpkLWrmpvZU97snQGYuUwkmQTeXK-CAikQUaDRL5b6PUuyzlzrARnUHdiNv47cNlceYGEOr-s6N8',
+        'Authorization': f'Bearer {token}',
     }
 
     params = (
@@ -69,7 +69,8 @@ async def root(request : Request):
 
 @app.post('/',response_class=HTMLResponse)
 async def get_form_data(request : Request,inputsongname: str = Form(...)):
-    songscore = scoregenerator(inputsongname)
+    accesstoken = generatecreds()
+    songscore = scoregenerator(inputsongname,accesstoken)
     return templates.TemplateResponse('index.html',{"request": request,"songscore1": songscore})
 
 # if __name__ == '__main__':

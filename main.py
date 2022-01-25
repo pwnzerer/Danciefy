@@ -29,6 +29,9 @@ def scoregenerator(songname,token):
 
     jsresponse = response.json()
 
+    artistname = jsresponse['tracks']['items'][0]['artists'][0]['name']
+    
+
     v1 = jsresponse['tracks']
     v2 = v1['items']
     v3 = v2[0]
@@ -54,7 +57,7 @@ def scoregenerator(songname,token):
     z2 = z1[0]
     dancescore = z2['danceability']
     dancescore2 = dancescore * 100
-    return dancescore2
+    return dancescore2 , artistname
 
 
 app = FastAPI()
@@ -71,7 +74,9 @@ async def root(request : Request):
 async def get_form_data(request : Request,inputsongname: str = Form(...)):
     accesstoken = generatecreds()
     songscore = scoregenerator(inputsongname,accesstoken)
-    return templates.TemplateResponse('index.html',{"request": request,"songscore1": songscore})
+    songscore2 = songscore[0]
+    artistname = songscore[1]
+    return templates.TemplateResponse('index.html',{"request": request,"songscore1": songscore2,"artistname": artistname})
 
 # if __name__ == '__main__':
 #     uvicorn.run(app)
